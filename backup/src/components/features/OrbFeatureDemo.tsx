@@ -25,7 +25,7 @@ const OrbFeatureDemo = () => {
               }}
             >
               <span style={{ fontFamily: 'Arial Rounded MT Regular, Arial, sans-serif' }}>How we </span>
-              <span style={{ fontFamily: 'PlayfairDisplay-Italic, serif' }}>works</span>
+              <span style={{ fontFamily: 'PlayfairDisplay-Italic, serif' }}>work</span>
             </span>
           </motion.h2>
           

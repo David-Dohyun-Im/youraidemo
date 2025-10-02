@@ -195,7 +195,7 @@ const OrbFeatureDemo = () => {
               }}
             >
               <span style={{ fontFamily: 'Arial Rounded MT Regular, Arial, sans-serif' }}>How we </span>
-              <span style={{ fontFamily: 'PlayfairDisplay-Italic, serif' }}>works</span>
+              <span style={{ fontFamily: 'PlayfairDisplay-Italic, serif' }}>work</span>
             </span>
           </motion.h2>
           
@@ -273,10 +273,10 @@ const OrbFeatureDemo = () => {
                     textAlign: 'left'
                   }}
                 >
-                  Cutting-Edge AI
+                  AI Strategy Consulting
                 </h3>
                 <p className="text-gray-600 leading-relaxed opacity-80">
-                  Deploy AI solutions that adapt quickly, learn fast, and scale with your business needs.
+                  Develop comprehensive AI strategies tailored to your business goals and industry requirements.
                 </p>
               </div>
             </div>
@@ -304,10 +304,10 @@ const OrbFeatureDemo = () => {
                   textAlign: 'left'
                 }}
               >
-                Automated Workflows
+                Process Automation
               </h3>
               <p className="text-gray-600 leading-relaxed opacity-80">
-                Streamline tasks and boost efficiency with powerful, scalable AI-powered automation tools for growing teams and projects.
+                Transform your operations with intelligent automation solutions that reduce costs and increase productivity.
               </p>
             </div>
             </motion.div>
@@ -344,10 +344,10 @@ const OrbFeatureDemo = () => {
                   textAlign: 'left'
                 }}
               >
-                Insightful Analytics
+                Data Intelligence
               </h3>
               <p className="text-gray-600 leading-relaxed opacity-80">
-                Gain deep, real-time data insights with advanced AI analytics to guide smarter strategies, decisions, and scalable business growth.
+                Unlock the power of your data with advanced AI analytics and machine learning models for better decision-making.
               </p>
             </div>
             </motion.div>
@@ -406,10 +406,10 @@ const OrbFeatureDemo = () => {
                     textAlign: 'left'
                   }}
                 >
-                  AI-Powered Support
+                  Customer Support
                 </h3>
                 <p className="text-gray-600 leading-relaxed opacity-80">
-                  Enhance customer experience with AI-driven virtual assistants possible for support and engagement.
+                  Enhance customer experience with AI-powered support systems and intelligent chatbots for 24/7 assistance.
                 </p>
               </div>
             </div>
