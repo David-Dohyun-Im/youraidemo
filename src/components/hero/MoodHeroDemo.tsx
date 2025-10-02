@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { CTAButtonVariant } from "../ui/cta-buttons";
 import { FlowButton } from "@/components/ui/flow-button";
 import { Button } from "@/components/ui/stateful-button";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import DesignaliDemo from "../navbar/DesignaliDemo";
 import { RealNavbarDemo } from "../navbar/RealNavbarDemo";
 import SimpleSaaSNavbarDemo from "../navbar/SimpleSaaSNavbarDemo";
@@ -321,18 +322,22 @@ const BlueCursorWithTooltip = ({
                   Start free exploration
                 </Button>
               </div>
-              <CTAButtonVariant
-                variant={4}
-                size="thumb"
+              <div
                 className="flex-shrink-0"
-                disableHoverBorder
                 onMouseEnter={() => onButtonHover(4)}
                 onMouseLeave={() => onButtonHover(null)}
                 onClick={(e) => {
                   e.stopPropagation();
                   onButtonClick(4);
                 }}
-              />
+              >
+                <div className="relative justify-center">
+                  <InteractiveHoverButton 
+                    text="Start free exploration" 
+                    className="h-[44px] px-4 text-sm"
+                  />
+                </div>
+              </div>
               <CTAButtonVariant
                 variant={5}
                 size="thumb"
@@ -769,6 +774,12 @@ export const MoodHeroDemo = () => {
                 <Button onClick={() => new Promise((resolve) => setTimeout(resolve, 4000))}>Start free exploration</Button>
               ) : selectedButton === 1 ? (
                 <FlowButton text="Start free exploration" />
+              ) : selectedButton === 4 ? (
+                <div className="relative justify-center">
+                  <InteractiveHoverButton 
+                    text="Start free exploration" 
+                  />
+                </div>
               ) : (
                 <CTAButtonVariant variant={(selectedButton === 3 ? 2 : selectedButton) as any} size="display" />
               )}
@@ -782,6 +793,13 @@ export const MoodHeroDemo = () => {
                 <Button hoverActive onClick={() => new Promise((resolve) => setTimeout(resolve, 4000))}>Start free exploration</Button>
               ) : hoveredButton === 1 ? (
                 <FlowButton hoverActive text="Start free exploration" />
+              ) : hoveredButton === 4 ? (
+                <div className="relative justify-center">
+                  <InteractiveHoverButton 
+                    text="Start free exploration" 
+                    hoverActive={true}
+                  />
+                </div>
               ) : (
                 <CTAButtonVariant variant={(hoveredButton === 3 ? 2 : hoveredButton) as any} size="display" />
               )}
